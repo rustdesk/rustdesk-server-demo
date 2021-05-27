@@ -1,0 +1,10 @@
+[package]
+name = "rustdesk-server"
+version = "1.0.0"
+authors = ["rustdesk <info@rustdesk.com>"]
+edition = "2018"
+description = "A remote control software."
+
+[dependencies]
+hbb_common = { path = "libs/hbb_common" }
+
