@@ -3,5 +3,6 @@ This is a super simple working demo implementation with only one relay connectio
 
 ## How to run
 ```
+# install rustup first, https://rustup.rs/
 IP=<your public ip> cargo run
 ```
