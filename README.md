@@ -4,5 +4,5 @@ This is a super simple working demo implementation with only one relay connectio
 ## How to run
 ```bash
 # install rustup first, https://rustup.rs/
-IP=<your public ip> cargo run
+IP=<public ip of this machine> cargo run
 ```
