@@ -11,4 +11,4 @@ https://rustdesk.com/blog/id-relay-set/
 
 https://github.com/rustdesk/rustdesk/issues/115
 
-If you still need my private help, [donate](https://github.com/sponsors/rustdesk/sponsorships?sponsor=rustdesk&tier_id=83999&preview=false) please!
+If you still need my private help, [donate](https://github.com/sponsors/rustdesk/sponsorships?sponsor=rustdesk&tier_id=84000&preview=false) please!
