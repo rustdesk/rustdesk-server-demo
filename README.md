@@ -6,3 +6,9 @@ This is a super simple working demo implementation with only one relay connectio
 # install rustup first, https://rustup.rs/
 IP=<public ip of this machine> cargo run
 ```
+
+https://rustdesk.com/blog/id-relay-set/
+
+https://github.com/rustdesk/rustdesk/issues/115
+
+## Please don't post any issue about the demo
