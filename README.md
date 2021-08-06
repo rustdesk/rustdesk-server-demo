@@ -11,4 +11,4 @@ https://rustdesk.com/blog/id-relay-set/
 
 https://github.com/rustdesk/rustdesk/issues/115
 
-## Please don't post any issue about the demo
+If you still need my private help, [donate](https://github.com/sponsors/rustdesk/sponsorships?sponsor=rustdesk&tier_id=83999&preview=false) please!
