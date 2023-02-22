@@ -10,5 +10,3 @@ IP=<public ip of this machine> cargo run
 https://rustdesk.com/blog/id-relay-set/
 
 https://github.com/rustdesk/rustdesk/issues/115
-
-If you still need my private help, [buy me a good hotpot](https://github.com/sponsors/rustdesk/sponsorships?tier_id=59969&preview=false) please!
