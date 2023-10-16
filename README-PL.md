@@ -1,14 +1,14 @@
 <p align="center">
-  [<a href="README-DE.md">Deutsch</a>] | [<a href="README-NL.md">Nederlands</a>]<br>
+   [<a href="README.md">English</a>] | [<a href="README-DE.md">Deutsch</a>] | [<a href="README-NL.md">Nederlands</a>]<br>
 </p>
 
-# A working demo of RustDesk server implementation
-This is a super simple working demo implementation with only one relay connection allowed, without NAT traversal, persistence, encryption and any other advanced features. But it can be your good starting point to write your own RustDesk server program. 
+# Działające demo implementacji serwera RustDesk
+Jest to bardzo prosta implementacja demonstracyjna z dozwolonym tylko jednym połączeniem, bez tłumaczenia NAT, trwałości, szyfrowania i innych zaawansowanych funkcji. Może to być dobry punkt wyjścia do napisania własnego serwera RustDesk.
 
-## How to run
+## Jak uruchomić
 ```bash
-# install rustup first, https://rustup.rs/
-IP=<public ip of this machine> cargo run
+# zainstaluj najpierw rustup, https://rustup.rs/
+IP=<publiczny adres IP tej maszyny> cargo run
 ```
 
 https://rustdesk.com/blog/id-relay-set/
