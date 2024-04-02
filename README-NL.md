@@ -1,5 +1,5 @@
 <p align="center">
-  [<a href="README.md">English</a>] | [<a href="README-DE.md">Deutsch</a>] | [<a href="README-PL.md">Polski</a>]<br>
+  [<a href="README.md">English</a>] | [<a href="README-DE.md">Deutsch</a>] | [<a href="README-FR.md">Français</a>] | [<a href="README-PL.md">Polski</a>]<br>
 </p>
 
 # Een werkende demo van de RustDesk serverimplementatie
