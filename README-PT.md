@@ -3,7 +3,7 @@
 </p>
 
 # Uma demonstração funcional da implementação do servidor RustDesk
-Esta é uma demonstração super simples funcionanado da implementação com apenas uma conexão de retransmissão permitida, sem NAT traversal, persistência, criptografia nem outros recursos avançados. Mas pode ser um bom ponto de partida para escrever seu próprio programa de servidor RustDesk.
+Esta é uma demonstração super simples funcionando da implementação com apenas uma conexão de retransmissão permitida, sem NAT traversal, persistência, criptografia nem outros recursos avançados. Mas pode ser um bom ponto de partida para escrever seu próprio programa de servidor RustDesk.
 
 ## Como rodar
 ```bash
