@@ -1,9 +1,10 @@
 use std::cell::RefCell;
-use zstd::block::{Compressor, Decompressor};
+use zstd::bulk::{Compressor, Decompressor};
+use zstd::stream::{Encoder, Decoder};
 
 thread_local! {
-    static COMPRESSOR: RefCell<Compressor> = RefCell::new(Compressor::new());
-    static DECOMPRESSOR: RefCell<Decompressor> = RefCell::new(Decompressor::new());
+    static COMPRESSOR: RefCell<Compressor<'static>> = RefCell::new(Compressor::new(0).unwrap());
+    static DECOMPRESSOR: RefCell<Decompressor<'static>> = RefCell::new(Decompressor::new().unwrap());
 }
 
 /// The library supports regular compression levels from 1 up to ZSTD_maxCLevel(),
@@ -14,7 +15,8 @@ pub fn compress(data: &[u8], level: i32) -> Vec<u8> {
     let mut out = Vec::new();
     COMPRESSOR.with(|c| {
         if let Ok(mut c) = c.try_borrow_mut() {
-            match c.compress(data, level) {
+            c.set_compression_level(level);
+            match c.compress(data) {
                 Ok(res) => out = res,
                 Err(err) => {
                     crate::log::debug!("Failed to compress: {}", err);

@@ -7,40 +7,45 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-protobuf = { version = "3.0.0-alpha.2" }
-tokio = { version = "0.2", features = ["full"] }
-tokio-util = { version = "0.3", features = ["full"] }
+protobuf = { version = "3.7.1", features = ["with-bytes"] }
+tokio = { version = "1.41.0", features = ["full"] }
+tokio-util = { version = "0.7.12", features = ["full"] }
 futures = "0.3"
-bytes = "0.5"
+bytes = "1.8.0"
 log = "0.4"
-env_logger = "0.8"
-socket2 = { version = "0.3", features = ["reuseport"] }
-zstd = "0.5"
-quinn = {version = "0.6", optional = true }
+env_logger = "0.11.5"
+socket2 = { version = "0.5.7", features = ["all"] }
+zstd = "0.13.2"
+quinn = {version = "0.11.5", optional = true }
 anyhow = "1.0"
 futures-util = "0.3"
 directories-next = "2.0"
-rand = "0.7"
-serde_derive = "1.0"
-serde = "1.0"
+rand = "0.8.5"
+serde_derive = "1.0.214"
+serde = "1.0.214"
 lazy_static = "1.4"
 confy = { git = "https://github.com/open-trade/confy" }
 dirs-next = "2.0"
 filetime = "0.2"
 sodiumoxide = "0.2"
+tokio-socks = { git = "https://github.com/open-trade/tokio-socks" }
+regex = "1.4"
+chrono = "0.4"
+chrono-tz = "0.10.0"
 
 [target.'cfg(not(any(target_os = "android", target_os = "ios")))'.dependencies]
 mac_address = "1.1"
+machine-uid = "0.5.3"
 
 [features]
 quic = ["quinn"]
 
 [build-dependencies]
-protobuf-codegen-pure = { version = "3.0.0-alpha.2" }
+protobuf-codegen = { version = "3.7.1" }
 
 [target.'cfg(target_os = "windows")'.dependencies]
 winapi = { version = "0.3", features = ["winuser"] }
 
 [dev-dependencies]
-toml = "0.5"
+toml = "0.8.19"
 serde_json = "1.0"
