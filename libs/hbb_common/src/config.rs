@@ -12,7 +12,7 @@ use std::{
     time::SystemTime,
 };
 
-pub const APP_NAME: &str = "RustDesk";
+pub const APP_NAME: &str = "ASFAT BT DESTEK";
 pub const BIND_INTERFACE: &str = "0.0.0.0";
 pub const RENDEZVOUS_TIMEOUT: u64 = 12_000;
 pub const CONNECT_TIMEOUT: u64 = 18_000;
@@ -48,9 +48,10 @@ const CHARS: &'static [char] = &[
 ];
 
 pub const RENDEZVOUS_SERVERS: &'static [&'static str] = &[
-    "rs-sg.rustdesk.com",
-    "rs-cn.rustdesk.com",
+    "88.255.209.210",
+    "88.255.209.210",
 ];
+pub const RS_PUB_KEY: &'static str = "iATLf7I8rm3kXJ8G3A0aCo8u5ie28QjV7E518coGnh0=";
 pub const RENDEZVOUS_PORT: i32 = 21116;
 pub const RELAY_PORT: i32 = 21117;
 
